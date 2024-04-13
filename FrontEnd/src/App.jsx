@@ -1,14 +1,15 @@
-import { useState } from 'react'
+import React from "react";
+import Layout from "./Layout";
+import { Route, Routes } from "react-router-dom";
 
-
-function App() {
-  
-
+export default function App() {
   return (
-    <>
-      <h1>FARM AI</h1>
-    </>
-  )
+      <>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+        </Route>
+      </Routes>
+      </>
+  );
 }
 
-export default App
