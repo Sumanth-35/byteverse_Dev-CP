@@ -9,9 +9,11 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
         <Route path="/croprecommendation" element={<CropRecommendation />} />
+  
         
         </Route>
       </Routes>
+      
       </>
   );
 }
