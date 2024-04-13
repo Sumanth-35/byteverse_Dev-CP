@@ -1,5 +1,5 @@
 import React from "react";
-// import bg from "../assets/2.jpg";
+import bg from "../assets/2.jpg";
 import { useState,useEffect } from "react";
 
 import Aos from 'aos'
@@ -800,7 +800,7 @@ const CropRecommendation = () => {
   const districts = statesAndDistricts[state] || [];
 
   const style = {
-    // backgroundImage: url(${bg}),
+    backgroundImage: `url(${bg})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",

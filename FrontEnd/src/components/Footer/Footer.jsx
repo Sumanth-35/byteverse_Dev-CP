@@ -5,9 +5,9 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 
 export default function Footer() {
-  useEffect(()=>{
-    Aos.init({duration:2000});
-  },[])
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, [])
 
   return (
     <footer className="bg-white" data-aos="fade-up">
@@ -19,31 +19,23 @@ export default function Footer() {
               <span className="self-center text-2xl font-semibold whitespace-nowrap hover:text-green-700 ">
                 Farm AI
               </span>
-             
+
             </Link>
           </div>
-          
+
           <div className="flex justify-end sm:gap-6 sm:grid-cols-2">
-          <div className="w-2/3 text-xl text-wrap m-2 p-2">Farm AI is a platform that combines the power of machine learning (ML) with agriculture to provide innovative solutions for farmers.It aims to enhance productivity, sustainability, and profitability in agriculture through the application of advanced technology and data analytics.</div>
+            <div className="w-2/3 text-xl text-wrap m-2 p-2">Farm AI is a platform that combines the power of machine learning (ML) with agriculture to provide innovative solutions for farmers.It aims to enhance productivity, sustainability, and profitability in agriculture through the application of advanced technology and data analytics.</div>
             <div>
               <h2 className="mb-6 text-sm font-semibold text-black uppercase ">
                 Resources
               </h2>
-              <ul className="text-gray-500 font-medium">
-              {/* <li className="mb-4">
-                  <Link
-                    to="/datacollect"
-                    className="hover:underline hover:text-green-700 "
-                  >
-                    Contribute Data
-                  </Link>
-                </li> */}
+              <ul className="text-gray-500 font-medium space-y-4">
                 <li>
                   <Link
                     to="/"
                     className="hover:underline hover:text-green-700 "
                   >
-                  Home
+                    Home
                   </Link>
                 </li>
                 <li className="mb-4">
@@ -60,7 +52,7 @@ export default function Footer() {
                     to="/cropyield"
                     className="hover:underline hover:text-green-700 "
                   >
-                  Yield Prediction
+                    Yield Prediction
                   </Link>
                 </li>
                 <li className="mb-4">
@@ -68,12 +60,12 @@ export default function Footer() {
                     to="/cropinfo"
                     className="hover:underline hover:text-green-700 "
                   >
-                   Crop Information
+                    Crop Information
                   </Link>
                 </li>
               </ul>
             </div>
-           
+
           </div>
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
