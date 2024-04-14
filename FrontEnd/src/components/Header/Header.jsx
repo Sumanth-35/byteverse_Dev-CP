@@ -1,20 +1,32 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
-import logo from "../assets/logo.jpg";
+import logo from "../assets/logo.png";
 import { NavLink, Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { changeLanguage } from "i18next";
+
 
 const Header = () => {
+  const { t } = useTranslation();
+
+
+  const handleLanguageChange = (e) => {
+    changeLanguage(e.target.value);
+  };
+
   let Links = [
-    { id: 1, name: "Home", link: "/" },
-    { id: 2, name: "Crop Recommendation", link: "/croprecommendation" },
-    { id: 3, name: "Yield Prediction", link: "/cropyield" },
+    { id: 1, name: `${t("home")}`, link: "/" },
+    { id: 2, name: `${t("cropRecom")}`, link: "/croprecommendation" },
+    { id: 3, name: `${t("yieldPrediction")}`, link: "/cropyield" },
     // { id: 4, name: "Disease Prediction", link: "/disease-prediction" },
-    { id: 5, name: "Crop Information", link: "/cropinfo" },
+    { id: 5, name: `${t("cropInfo")}`, link: "/cropinfo" },
   ];
   let [open, setOpen] = useState(false);
 
+  console.log(Links);
+ 
   return (
-    <div  className="shadow-md w-full fixed top-0 left-0 z-[100] animate-fade-down animate-once animate-duration-[2000ms] animate-ease-out">
+    <div className="shadow-md w-full fixed top-0 left-0 z-[100] animate-fade-down animate-once animate-duration-[2000ms] animate-ease-out">
       <div className="md:flex items-center justify-between py-2 bg-white md:px-10 px-7">
         {/* logo section */}
         <Link to="/">
@@ -46,9 +58,27 @@ const Header = () => {
               </NavLink>
             </li>
           ))}
-          <button className="btn bg-green-700 text-white md:ml-8 font-semibold px-3 py-1 rounded duration-500 md:static">
-            Help
-          </button>
+          <Link to="/help">
+            {" "}
+            <button className="btn bg-green-700 text-white md:ml-8 font-semibold px-3 py-1 rounded duration-500 mx-3 md:static">
+              {t("help")}
+            </button>
+          </Link>
+          <li>
+            <form className="max-w-sm mx-auto ">
+             
+              <select
+                id="countries"
+                className=" bg-green-700 text-white text-sm rounded-lg block p-1.5 "
+                onChange={handleLanguageChange}
+              >
+                <option selected className="bg-white text-black">Languages</option>
+                <option value="en" className="bg-white text-black">English</option>
+                <option value="hi" className="bg-white text-black">Hindi</option>
+                
+              </select>
+            </form>
+          </li>
         </ul>
         {/* button */}
       </div>
