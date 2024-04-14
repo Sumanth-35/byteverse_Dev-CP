@@ -65,6 +65,10 @@ FarmAI is a comprehensive agricultural management system that leverages cutting-
 -Database: Firebase
 -Deployment: Flask
 
+## Motivation
+
+The motivation behind FarmAI stems from the desire to address various challenges and inefficiencies in traditional agricultural practices while harnessing the power of technology to empower farmers and improve agricultural productivity.
+
 ## Getting Started
 
 ## REPO LINK
