@@ -37,25 +37,25 @@ FarmAI is a comprehensive agricultural management system that leverages cutting-
 
 **Crop Information:**
 
-Overview: The crop information feature provides comprehensive information about various crops, including cultivation techniques, nutritional requirements, pest management strategies, and market trends.
+-Overview: The crop information feature provides comprehensive information about various crops, including cultivation techniques, nutritional requirements, pest management strategies, and market trends.
 
-Functionality: Farmers can access detailed profiles for different crops, including information about optimal planting times, soil and climate requirements, common pests and diseases, and post-harvest handling practices. Additionally, the system may include market analysis and price trends to help farmers make informed decisions about crop selection and marketing.
+-Functionality: Farmers can access detailed profiles for different crops, including information about optimal planting times, soil and climate requirements, common pests and diseases, and post-harvest handling practices. Additionally, the system may include market analysis and price trends to help farmers make informed decisions about crop selection and marketing.
 
-Benefits: Access to reliable crop information empowers farmers to adopt best practices, mitigate risks, and optimize crop management strategies, leading to improved yields and profitability.
+-Benefits: Access to reliable crop information empowers farmers to adopt best practices, mitigate risks, and optimize crop management strategies, leading to improved yields and profitability.
 
 **Help Page:**
 
-Overview: The help page provides guidance and support to users on how to navigate and use the features of the FarmAI platform effectively.
+-Overview: The help page provides guidance and support to users on how to navigate and use the features of the FarmAI platform effectively.
 
-Benefits: The help page enhances user experience and ensures that users can effectively utilize the platform to its full potential, leading to increased adoption and satisfaction among farmers.
+-Benefits: The help page enhances user experience and ensures that users can effectively utilize the platform to its full potential, leading to increased adoption and satisfaction among farmers.
 
 **Multilingual Feature (Hindi & English):**
 
-Overview: The multilingual feature provides support for users who prefer to access the platform in languages other than English, such as Hindi.
+-Overview: The multilingual feature provides support for users who prefer to access the platform in languages other than English, such as Hindi.
 
-Functionality: Users can switch the language settings to Hindi, and all interface elements, instructions, and content will be displayed in the selected language. Additionally, the system may provide translation services for user-generated content and communication features to facilitate interactions in Hindi.
+-Functionality: Users can switch the language settings to Hindi, and all interface elements, instructions, and content will be displayed in the selected language. Additionally, the system may provide translation services for user-generated content and communication features to facilitate interactions in Hindi.
 
-Benefits: By offering support for Hindi language users, the platform ensures inclusivity and accessibility, reaching a broader audience of farmers and stakeholders and enabling effective communication and engagement.
+-Benefits: By offering support for Hindi language users, the platform ensures inclusivity and accessibility, reaching a broader audience of farmers and stakeholders and enabling effective communication and engagement.
 
 ## Tech Stack
 
