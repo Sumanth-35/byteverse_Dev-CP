@@ -3,19 +3,19 @@
 Farm AI is an innovative agricultural management system designed to assist farmers in optimizing crop yield, mitigating risks, and improving overall productivity. With features such as crop recommendation, yield prediction and crop information, Farm AI empowers farmers with data-driven insights to make informed decisions and adopt best practices in farming. The platform also includes a "Help Us" page to guide farmers on how to effectively utilize the website's features.
 
 
-## Project Overview
+## **Project Overview**
 
 FarmAI is a comprehensive agricultural management system that leverages cutting-edge technologies to empower farmers with actionable insights and recommendations for crop cultivation. The platform offers the following key features:
 
--Crop Recommendation: Utilizes machine learning algorithms to recommend the most suitable crops based on soil characteristics, climate conditions, and historical data.
+*Crop Recommendation: Utilizes machine learning algorithms to recommend the most suitable crops based on soil characteristics, climate conditions, and historical data.
 
--Yield Prediction: Predicts crop yields for upcoming seasons using historical yield data, weather forecasts, and soil health indicators.
+*Yield Prediction: Predicts crop yields for upcoming seasons using historical yield data, weather forecasts, and soil health indicators.
 
--Crop Information: Provides access to comprehensive information on various crops, including cultivation techniques, nutritional requirements, and pest management strategies.
+*Crop Information: Provides access to comprehensive information on various crops, including cultivation techniques, nutritional requirements, and pest management strategies.
 
--Help Page: Offers a user-friendly guide on how to navigate and utilize the features of the FarmAI platform effectively, ensuring farmers can make the most out of the platform to optimize their agricultural practices and maximize crop productivity.
+*Help Page: Offers a user-friendly guide on how to navigate and utilize the features of the FarmAI platform effectively, ensuring farmers can make the most out of the platform to optimize their agricultural practices and maximize crop productivity.
 
--Multi-lingual Feature: This website is a user-friendly which it helps the farmers to use this website in their preferred language (currently we added only hindi and english .In future aspect we will try to do all Indian Languages ).
+*Multi-lingual Feature: This website is a user-friendly which it helps the farmers to use this website in their preferred language (currently we added only hindi and english .In future aspect we will try to do all Indian Languages ).
 
 ## Features
 
