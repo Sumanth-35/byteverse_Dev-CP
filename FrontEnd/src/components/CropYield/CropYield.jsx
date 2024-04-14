@@ -2,6 +2,7 @@ import React from "react";
 import bg from "../assets/2.jpg";
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import axios from 'axios'
 import Aos from "aos";
 import "aos/dist/aos.css";
 const CropYield = () => {
@@ -811,12 +812,12 @@ const CropYield = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const crop_name = e.target.crop_name.value;
-    const season = e.target.season.value;
-    const state = e.target.state.value;
+    const Item = e.target.crop_name.value;
+    const state = e.target.state.value; 
     const area = e.target.area.value;
     const rainfall = e.target.rainfall.value;
-    const district = e.target.district.value;
+    const Year =2024;
+
 
     const data = {
       crop_name,
@@ -824,7 +825,7 @@ const CropYield = () => {
       area,
       rainfall,
       state,
-      district,
+      Year,
     };
 
     const options = {
@@ -838,7 +839,6 @@ const CropYield = () => {
         area,
         rainfall,
         state,
-        district,
       }),
     };
 
@@ -855,7 +855,7 @@ const CropYield = () => {
     console.log(data);
     try {
       console.log(data);
-      const response = await axios.post("http://127.0.0.1:5000/predict", data);
+      const response = await axios.post("http://127.0.0.1:7000/predict", data);
       // console.log(response);
       setPrediction(response["data"]["prediction"]);
       // console.log(response["data"]["prediction"]);
@@ -896,7 +896,7 @@ const CropYield = () => {
 
         <label
           for="season"
-          htmlFor="season"
+          htmlFor="state"
           className="block text-gray-700 text-sm font-bold mb-2"
         >
           {t(["select_season"])}

@@ -17,6 +17,7 @@ i18next
   .init({
     supportedLngs: ['en', 'hi'],
     fallbackLng: 'en',
+    lng: 'en',
     debug: false,
     
   

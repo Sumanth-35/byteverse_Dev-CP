@@ -65,7 +65,7 @@ const Header = () => {
             </button>
           </Link>
           <li>
-            <form className="max-w-sm mx-auto ">
+            <form className=" w-1/10 md:max-w-sm my-3 ">
              
               <select
                 id="countries"

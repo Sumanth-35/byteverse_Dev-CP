@@ -1,76 +1,49 @@
-import React, { useState } from 'react';
-import { SlArrowDown } from "react-icons/sl";
-
+import React ,{useEffect} from "react";
+import { useTranslation } from "react-i18next";
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Help = () => {
-  const [showSteps1, setShowSteps1] = useState(false);
-  const [showSteps2, setShowSteps2] = useState(false);
-  const [showSteps3, setShowSteps3] = useState(false);
-
-  const toggleSteps1 = () => {
-    setShowSteps1(!showSteps1);
-  };
-  const toggleSteps2 = () => {
-    setShowSteps2(!showSteps2);
-  };
-  const toggleSteps3 = () => {
-    setShowSteps3(!showSteps3);
-  };
-
+  const { t } = useTranslation();
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
-    <div>
-      <span>
-      <h5>Crop Recommendation</h5>
-      <SlArrowDown onClick={toggleSteps1} />
-      {showSteps1 ? 'Hide Steps' : 'Show Steps'}
-      </span>
-      {showSteps1 && (
+    <div className="flex flex-col items-center justify-center p-4 mt-20 bg-green-200" data-aos="fade-up">
+      <h5 className="flex text-4xl font-bold"> {t(["help_header"])}</h5>
 
-        <div>
-          <h2>How to Use:</h2>
-          <ol>
-            <li>Enter the values of N, P, K nutrient levels and the pH of the soil in the input fields provided. You can know the values by using soil testing kits</li>
-            <li>It is optional to fill the other features - Rainfall,Temparature,Humidity. Otherwise you can just enter your State and District </li>
-            <li>Click on the "Submit" button to see the recommended crop</li>
-          </ol>
-        </div>
-      )}
-
-
-    <span>
-    <h6>Yield Prediction</h6>
-    <SlArrowDown onClick={toggleSteps2}/>
-      {showSteps2 ? 'Hide Steps' : 'Show Steps'}
-    </span>
-    {showSteps2 && (
-      <div>
-        <h2>How to Use:</h2>
-        <ol>
-          <li>Enter the crop name,Season,Area</li>
-          <li>It is optional to fill Rainfall. Otherwise you can just enter your State and District </li>
-          <li>Click on the "Submit" button to see how much yield you get of that crop </li>
-        </ol>
-        </div>
-    )};
-
-
-        <span>
-    <h6>Disease Prediction</h6>
-    < SlArrowDown onClick={toggleSteps3}/>
-      {showSteps3 ? 'Hide Steps' : 'Show Steps'}
-    </span>
-    {showSteps3 && (
-      <div>
-        <h2>How to Use:</h2>
-        <ol>
-          <li>Upload the Image of Infected part of the plant in '.jpg'/'.jpeg' format</li>
-          <li>Click on the "Submit" button to see Which disease that crop </li>
-        </ol>
-
+      <div className=" mt-10">
+        <h2 class="mb-2 text-lg font-semibold ">{t(["how_to"])}</h2>
+        <ul class="max-w-md space-y-5  list-disc list-inside ">
+          <li>
+            <span class="font-bold"> {t(["phosphorus"])}:</span> {t("help_phosphorus")}
+          </li>
+          <li>
+            <span class="font-bold"> {t(["potassium"])}:</span> {t("help_potassium")}
+          </li>
+          <li>
+            <span class="font-bold"> {t(["nitrogen"])}:</span> {t("help_nitrogen")}
+          </li>
+          <li>
+            <span class="font-bold"> {t(["pH"])}:</span> {t("help_pH")}
+          </li>
+          <li>
+            <span class="font-bold"> {t(["temperature"])}:</span> {t("help_temperature")}
+          </li>
+          <li>
+            <span class="font-bold"> {t(["rainfall"])}:</span> {t("help_rainfall")}
+          </li>
+          <li>
+            <span class="font-bold">{t(["humidity"])}:</span> {t("help_humidity")}
+          </li>
+          <li>
+            <span class="font-bold"> {t(["state"])}:</span> {t("help_state")}
+          </li>
+          <li>
+            <span class="font-bold"> {t(["district"])}:</span> {t("help_district")}
+          </li>
+        </ul>
       </div>
-    )};
-
-
-  </div>
-);
+    </div>
+  );
 };
 export default Help;

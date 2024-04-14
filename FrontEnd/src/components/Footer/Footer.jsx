@@ -32,16 +32,9 @@ export default function Footer() {
               <h2 className="mb-6 text-sm font-semibold text-black uppercase ">
                 Resources
               </h2>
-              <ul className="text-gray-500 font-medium">
-              {/* <li className="mb-4">
-                  <Link
-                    to="/datacollect"
-                    className="hover:underline hover:text-green-700 "
-                  >
-                    Contribute Data
-                  </Link>
-                </li> */}
-                <li>
+              <ul className="text-gray-500 font-medium my-2">
+            
+                <li  className="mb-4">
                   <Link
                     to="/"
                     className="hover:underline hover:text-green-700 "
@@ -87,7 +80,7 @@ export default function Footer() {
               © 2023
             </span>
             <span
-              className="hover:underline">Farm AI™. All Rights Reserved.
+              className="hover:underline"> Farm AI™. All Rights Reserved.
             </span>
           </Link>
         </div>

@@ -7,14 +7,15 @@
   "app_title": "Crop Recommendation Form",
   "phosphorus": "Phosphorus(P)",
   "phosphorus_placeholder": "Enter the Phosphorus Content",
-  "crop_name":"Crop Name",
+  "crop_name": "Crop Name",
   "potassium": "Potassium(K)",
   "potassium_placeholder": "Enter the Potassium Content",
-
+  "how_to":"How to Fill Inputs:",
+  "help_header":"Get Help",
   "nitrogen": "Nitrogen(N)",
+  "optional":"(Optional)",
   "nitrogen_placeholder": "Enter the Nitrogen Content",
-  "crop_name_placeholder":"फसल का नाम दर्ज करें",
-
+  "crop_name_placeholder": "Enter the Name of Crop",
 
   "ph": "pH",
   "ph_placeholder": "Enter the pH Content of Soil",
@@ -31,25 +32,34 @@
   "home_text": "Welcome to FarmAI, where innovation meets agriculture. Revolutionize your farming practices with our cutting-edge AI solutions tailored to maximize yields and optimize crop management for a sustainable future.",
 
   "footer_text": "Farm AI is a platform that combines the power of machine learning (ML) with agriculture to provide innovative solutions for farmers.It aims to enhance productivity, sustainability, and profitability in agriculture through the application of advanced technology and data analytics.",
-   
-  "services_heading":"Our Services",
-  "crop_recomm_des":"Crop recommendation is a process in agriculture where data analysis, including factors like soil type and climate.",
 
-  "crop_yield_des":"Crop yield prediction uses machine learning to forecast how much crops will be produced based on historical and current data.",
+  "services_heading": "Our Services",
+  "crop_recomm_des": "Crop recommendation is a process in agriculture where data analysis, including factors like soil type and climate.",
 
-  "crop_info_des":"Crop information refers to data about various crops, including their optimal growing conditions such as soil type, temperature, rainfall, and humidity.",
+  "crop_yield_des": "Crop yield prediction uses machine learning to forecast how much crops will be produced based on historical and current data.",
+
+  "crop_info_des": "Crop information refers to data about various crops, including their optimal growing conditions such as soil type, temperature, rainfall, and humidity.",
 
   "state": "State",
   "state_placeholder": "Enter the State",
-  "select_season":"Select a Season",
+  "select_season": "Select a Season",
 
   "district": "District",
   "district_placeholder": "Enter the District",
 
   "area": "Area",
   "area_placeholder": "Enter the Area(in hectares)",
-  "select_crop":"Select the Crop to get the Suitable Soil type ,Temparature , Rainfall and Humidity .",
+  "select_crop": "Select the Crop to get the Suitable Soil type ,Temparature , Rainfall and Humidity .",
 
   "reset": "Reset",
-  "submit": "Submit"
+  "submit": "Submit",
+  "help_phosphorus": "Enter the level of phosphorus in your soil. Phosphorus is like fuel for plant roots, helping them grow strong and healthy.",
+  "help_potassium": "Input the potassium level in your soil. Potassium acts like a plant's multivitamin, supporting various functions like photosynthesis and water regulation.",
+  "help_nitrogen": "Let us know the nitrogen level in your soil. Nitrogen is vital for vibrant, green plants and helps them grow big and strong.",
+  "help_pH": "Adjust the pH level to suit your soil. pH is like the mood of your soil—it affects how happy your plants are by influencing nutrient availability.",
+  "help_temperature": "Tell us the temperature in your area. Temperature influences when plants grow and how well they do, from sprouting seeds to bearing fruit.",
+  "help_rainfall": "Enter how much rain your area gets. Rainfall keeps your soil moist and your plants hydrated and happy.",
+  "help_humidity": "Share the humidity level in your region. Humidity affects how much water plants lose, influencing their growth and health.",
+  "help_state": "Select the state where your land is located. Choosing your state helps us give you crop recommendations tailored to your local climate.",
+  "help_district": "Pick your district from the list. This helps us fine-tune our recommendations based on the specific conditions in your area."
 }

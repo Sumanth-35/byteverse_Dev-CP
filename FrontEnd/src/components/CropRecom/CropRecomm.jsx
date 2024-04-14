@@ -959,7 +959,7 @@ const CropRecommendation = () => {
             className="block text-gray-700 text-sm font-bold mb-2"
             htmlFor="temparature"
           >
-            {t(["temperature"])}
+            {t(["temperature"])} {t(["optional"])}
           </label>
           <input
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:ring-0 focus:border-gray-900 placeholder-[#a56d39]"
@@ -974,14 +974,14 @@ const CropRecommendation = () => {
             className="block text-gray-700 text-sm font-bold mb-2"
             htmlFor="potassium"
           >
-            {t(["rainfall"])}
+            {t(["rainfall"])}  {t(["optional"])}
           </label>
           <input
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:ring-0 focus:border-gray-900 placeholder-[#a56d39]"
             id="rainfall"
             name="rainfall"
             type="number"
-            placeholder={t(["rainfall_placeholder"])}
+            placeholder={t(["rainfall_placeholder"])} 
           />
         </div>
         <div className="mb-4">
@@ -989,7 +989,7 @@ const CropRecommendation = () => {
             className="block text-gray-700 text-sm font-bold mb-2"
             htmlFor="humidity"
           >
-            {t(["humidity"])}
+            {t(["humidity"])}  {t(["optional"])}
           </label>
           <input
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:ring-0 focus:border-gray-900 placeholder-[#a56d39]"
