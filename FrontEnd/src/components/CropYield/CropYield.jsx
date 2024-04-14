@@ -899,7 +899,7 @@ const CropYield = () => {
 
         <label
           for="season"
-          htmlFor="state"
+          htmlFor="season"
           className="block text-gray-700 text-sm font-bold mb-2"
         >
           {t(["select_season"])}
