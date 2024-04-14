@@ -816,7 +816,6 @@ const CropYield = () => {
     const state = e.target.state.value;
     const area = e.target.area.value;
     const rainfall = e.target.rainfall.value;
-    const humidity = e.target.humidity.value;
     const district = e.target.district.value;
 
     const data = {
@@ -824,7 +823,6 @@ const CropYield = () => {
       season,
       area,
       rainfall,
-      humidity,
       state,
       district,
     };
@@ -839,7 +837,6 @@ const CropYield = () => {
         season,
         area,
         rainfall,
-        humidity,
         state,
         district,
       }),
