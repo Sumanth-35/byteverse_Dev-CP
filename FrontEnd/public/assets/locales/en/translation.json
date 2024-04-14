@@ -1,0 +1,55 @@
+{
+  "home": "Home",
+  "cropRecom": "Crop Recommendation",
+  "yieldPrediction": "Yield Prediction",
+  "cropInfo": "Crop Information",
+  "help": "Help",
+  "app_title": "Crop Recommendation Form",
+  "phosphorus": "Phosphorus(P)",
+  "phosphorus_placeholder": "Enter the Phosphorus Content",
+  "crop_name":"Crop Name",
+  "potassium": "Potassium(K)",
+  "potassium_placeholder": "Enter the Potassium Content",
+
+  "nitrogen": "Nitrogen(N)",
+  "nitrogen_placeholder": "Enter the Nitrogen Content",
+  "crop_name_placeholder":"फसल का नाम दर्ज करें",
+
+
+  "ph": "pH",
+  "ph_placeholder": "Enter the pH Content of Soil",
+
+  "temperature": "Temperature",
+  "temparature_placeholder": "Enter the Temparature",
+
+  "rainfall": "Rainfall",
+  "rainfall_placeholder": "Enter the Rainfall(in mm)",
+
+  "humidity": "Humidity",
+  "humidity_placeholder": "Enter the Humidity",
+
+  "home_text": "Welcome to FarmAI, where innovation meets agriculture. Revolutionize your farming practices with our cutting-edge AI solutions tailored to maximize yields and optimize crop management for a sustainable future.",
+
+  "footer_text": "Farm AI is a platform that combines the power of machine learning (ML) with agriculture to provide innovative solutions for farmers.It aims to enhance productivity, sustainability, and profitability in agriculture through the application of advanced technology and data analytics.",
+   
+  "services_heading":"Our Services",
+  "crop_recomm_des":"Crop recommendation is a process in agriculture where data analysis, including factors like soil type and climate.",
+
+  "crop_yield_des":"Crop yield prediction uses machine learning to forecast how much crops will be produced based on historical and current data.",
+
+  "crop_info_des":"Crop information refers to data about various crops, including their optimal growing conditions such as soil type, temperature, rainfall, and humidity.",
+
+  "state": "State",
+  "state_placeholder": "Enter the State",
+  "select_season":"Select a Season",
+
+  "district": "District",
+  "district_placeholder": "Enter the District",
+
+  "area": "Area",
+  "area_placeholder": "Enter the Area(in hectares)",
+  "select_crop":"Select the Crop to get the Suitable Soil type ,Temparature , Rainfall and Humidity .",
+
+  "reset": "Reset",
+  "submit": "Submit"
+}

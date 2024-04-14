@@ -1,11 +1,10 @@
 import React from "react";
 import bg from "../assets/2.jpg";
 import { useState, useEffect } from "react";
-import axios from "axios";
 import { useTranslation } from "react-i18next";
 import Aos from "aos";
 import "aos/dist/aos.css";
-const CropRecommendation = () => {
+const CropYield = () => {
   const [state, setState] = useState([]);
   const [district, setDistrict] = useState([]);
 
@@ -812,22 +811,18 @@ const CropRecommendation = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const nitrogen = e.target.nitrogen.value;
-    const phosphorous = e.target.phosphorous.value;
-    const potassium = e.target.potassium.value;
-    const ph = e.target.ph.value;
-    const temperature = e.target.temperature.value;
+    const crop_name = e.target.crop_name.value;
+    const season = e.target.season.value;
+    const state = e.target.state.value;
+    const area = e.target.area.value;
     const rainfall = e.target.rainfall.value;
     const humidity = e.target.humidity.value;
-    const state = e.target.state.value;
     const district = e.target.district.value;
 
     const data = {
-      nitrogen,
-      phosphorous,
-      potassium,
-      ph,
-      temperature,
+      crop_name,
+      season,
+      area,
       rainfall,
       humidity,
       state,
@@ -840,11 +835,9 @@ const CropRecommendation = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        nitrogen,
-        phosphorous,
-        potassium,
-        ph,
-        temperature,
+        crop_name,
+        season,
+        area,
         rainfall,
         humidity,
         state,
@@ -854,7 +847,7 @@ const CropRecommendation = () => {
 
     try {
       const res = await fetch(
-        "https://byte-verse-default-rtdb.firebaseio.com/CropRecommendation.json",
+        "https://byte-verse-default-rtdb.firebaseio.com/CropYield.json",
         options
       );
       console.log(res);
@@ -862,8 +855,9 @@ const CropRecommendation = () => {
       console.error("Error submitting form:", error);
     }
 
+    console.log(data);
     try {
-      // console.log(data);
+      console.log(data);
       const response = await axios.post("http://127.0.0.1:5000/predict", data);
       // console.log(response);
       setPrediction(response["data"]["prediction"]);
@@ -873,6 +867,7 @@ const CropRecommendation = () => {
       console.error("Error submitting form:", error);
     }
   };
+
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
@@ -880,125 +875,45 @@ const CropRecommendation = () => {
   const { t } = useTranslation();
   return (
     <div
-      className="flex flex-col items-center justify-center mt-20 p-4 "
+      className="flex flex-col items-center justify-center  p-4 mt-20"
       style={style}
       data-aos="fade-up"
     >
-      <h2 className="text-2xl md:text-4xl mb-5">{t(["cropRecom"])} Form</h2>
+      <h2 className="text-2xl md:text-4xl mb-5">{t(["yieldPrediction"])} </h2>
 
       <form
         onSubmit={handleSubmit}
         className="w-full md:max-w-lg bg-[#cdf1c7] shadow-md rounded px-8 pt-6 pb-8 mb-4"
       >
-        <div className="mb-4">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="phosphorous"
-          >
-            {t(["phosphorus"])}
-          </label>
-          <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:ring-0 focus:border-gray-900 placeholder-[#a56d39]"
-            id="phosphorous"
-            name="phosphorous"
-            type="number"
-            placeholder={t(["phosphorus_placeholder"])}
-            required
-          />
-        </div>
-        <div className="mb-4">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="potassium"
-          >
-            {t(["potassium"])}
-          </label>
-          <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:ring-0 focus:border-gray-900 placeholder-[#a56d39]"
-            id="potassium"
-            name="potassium"
-            type="number"
-            placeholder={t(["potassium_placeholder"])}
-            required
-          />
-        </div>
-        <div className="mb-4">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="nitrogen"
-          >
-            {t(["nitrogen"])}
-          </label>
-          <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:ring-0 focus:border-gray-900 placeholder-[#a56d39]"
-            id="nitrogen"
-            name="nitrogen"
-            type="number"
-            placeholder={t(["nitrogen_placeholder"])}
-            required
-          />
-        </div>
-        <div className="mb-4">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="potassium"
-          >
-            ph :
-          </label>
-          <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:ring-0 focus:border-gray-900 placeholder-[#a56d39]"
-            id="ph"
-            name="ph"
-            type="number"
-            placeholder={t(["ph_placeholder"])}
-            required
-          />
-        </div>
-        <div className="mb-4">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="temparature"
-          >
-            {t(["temperature"])}
-          </label>
-          <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:ring-0 focus:border-gray-900 placeholder-[#a56d39]"
-            id="temparature"
-            name="temperature"
-            type="number"
-            placeholder={t(["temparature_placeholder"])}
-          />
-        </div>
-        <div className="mb-4">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="potassium"
-          >
-            {t(["rainfall"])}
-          </label>
-          <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:ring-0 focus:border-gray-900 placeholder-[#a56d39]"
-            id="rainfall"
-            name="rainfall"
-            type="number"
-            placeholder={t(["rainfall_placeholder"])}
-          />
-        </div>
-        <div className="mb-4">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="humidity"
-          >
-            {t(["humidity"])}
-          </label>
-          <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:ring-0 focus:border-gray-900 placeholder-[#a56d39]"
-            id="humidity"
-            name="humidity"
-            type="number"
-            placeholder={t(["humidity_placeholder"])}
-          />
-        </div>
+        <label className="block text-gray-700 text-sm font-bold mb-2">
+          {t(["crop_name"])}
+        </label>
+        <input
+          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:ring-0 focus:border-gray-900 placeholder-[#a56d39]"
+          id="crop_name"
+          name="crop_name"
+          type="text"
+          placeholder={t(["crop_name_placeholder"])}
+          required
+        />
+
+        <label
+          for="season"
+          htmlFor="state"
+          className="block text-gray-700 text-sm font-bold mb-2"
+        >
+          {t(["select_season"])}
+        </label>
+        <select
+          id="season"
+          name="season"
+          className="shadow border rounded w-full py-2 px-3 text-[#a56d39] leading-tight focus:outline-none focus:shadow-outline"
+          required
+        >
+          <option value="kharif">Kharif</option>
+          <option value="rabi">Rabi</option>
+          <option value="wholeyear">Whole Year</option>
+        </select>
 
         <div className="mb-4">
           <label
@@ -1008,7 +923,7 @@ const CropRecommendation = () => {
             {t(["state"])}
           </label>
           <select
-            className="shadow border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow border rounded w-full py-2 px-3 text-[#a56d39] leading-tight focus:outline-none focus:shadow-outline"
             id="state"
             name="state"
             value={state}
@@ -1016,7 +931,7 @@ const CropRecommendation = () => {
             required
           >
             {states.map((state, index) => (
-              <option key={index} value={state}>
+              <option key={index} value={state} className="text-gray-700">
                 {state}
               </option>
             ))}
@@ -1031,12 +946,13 @@ const CropRecommendation = () => {
             {t(["district"])}
           </label>
           <select
-            className="shadow border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow border rounded w-full py-2 px-3 text-[#a56d39] leading-tight focus:outline-none focus:shadow-outline"
             id="district"
             name="district"
             value={district}
             onChange={(e) => setDistrict(e.target.value)}
             required
+            displayEmpty
           >
             {districts.map((district, index) => (
               <option key={index} value={district}>
@@ -1045,6 +961,30 @@ const CropRecommendation = () => {
             ))}
           </select>
         </div>
+        <label className="block text-gray-700 text-sm font-bold mb-2">
+          {" "}
+          {t(["area"])}
+        </label>
+        <input
+          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:ring-0 focus:border-gray-900 placeholder-[#a56d39]"
+          id="area"
+          name="area"
+          type="number"
+          placeholder={t(["area_placeholder"])}
+          required
+        />
+        <label className="block text-gray-700 text-sm font-bold mb-2">
+          {t(["rainfall"])}
+        </label>
+        <input
+          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:ring-0 focus:border-gray-900 placeholder-[#a56d39]"
+          id="rainfall"
+          name="rainfall"
+          type="number"
+          placeholder={t(["rainfall_placeholder"])}
+          required
+        />
+
         <div className="flex items-center justify-left">
           <button
             className=" bg-green-700 hover:bg-green-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline m-2"
@@ -1060,17 +1000,8 @@ const CropRecommendation = () => {
           </button>
         </div>
       </form>
-      {prediction && (
-        <div
-          data-aos="fade-up"
-          className="p-2 w-full md:max-w-lg bg-[#cdf1c7] shadow-md rounded px-8 pt-6 pb-8 mb-4"
-        >
-          Best Suitable Crop for Given Conditions is:{" "}
-          <p className="text-2xl font-bold">{prediction}</p>
-        </div>
-      )}
     </div>
   );
 };
 
-export default CropRecommendation;
+export default CropYield;
