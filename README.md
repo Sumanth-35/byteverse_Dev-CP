@@ -61,7 +61,7 @@ FarmAI is a comprehensive agricultural management system that leverages cutting-
 
 - Frontend: Tailwind CSS, i18next , React.js
 - Backend: Python
-- Machine Learning: Numpy, Pandas, Matplotlib, Scikit-learn, TensorFlow, 
+- Machine Learning: Numpy, Pandas, Matplotlib, Scikit-learn, TensorFlow, Keras
 - Database: Firebase
 - Deployment: Flask
 
