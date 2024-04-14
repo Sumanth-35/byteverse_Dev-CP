@@ -92,3 +92,31 @@ ii)Backend: cd backend && pip install -r requirements.txt
 
 
 VIDEO DEMONSTRATION OF OUR PROJECT ON WEB can be viewed [here]()
+
+
+## Images of Website
+
+![Screenshot 2024-04-14 185621](https://github.com/anuragbhanu/Weather_app/assets/130905151/e8cec22d-5d2f-44df-a2f0-3b3b4ddf3492)
+![Screenshot 2024-04-14 185635](https://github.com/anuragbhanu/Weather_app/assets/130905151/131edbca-14a2-47f8-8e8a-4645be20faf5)
+![Screenshot 2024-04-14 185657](https://github.com/anuragbhanu/Weather_app/assets/130905151/55b33a4b-1391-4a05-942a-ae7f33e866f8)
+![Screenshot 2024-04-14 185743](https://github.com/anuragbhanu/Weather_app/assets/130905151/03bd19a7-fb8a-423e-8d01-bc4360bd5a4e)
+![Screenshot 2024-04-14 185809](https://github.com/anuragbhanu/Weather_app/assets/130905151/8d0a6ea5-781a-4ba4-b645-29770ebd805d)
+![Screenshot 2024-04-14 185834](https://github.com/anuragbhanu/Weather_app/assets/130905151/44b6642b-60f8-4249-bac2-3b5941fe32f3)
+![Screenshot 2024-04-14 185845](https://github.com/anuragbhanu/Weather_app/assets/130905151/f9202e89-320a-45e5-8d90-6883424d18bf)
+![Screenshot 2024-04-14 185858](https://github.com/anuragbhanu/Weather_app/assets/130905151/1e785eda-ad49-4c9a-b7f4-74dd031081c1)
+![Screenshot 2024-04-14 185917](https://github.com/anuragbhanu/Weather_app/assets/130905151/1513a5ce-52b7-4477-86ff-aaaf62c17cee)
+![Screenshot 2024-04-14 185939](https://github.com/anuragbhanu/Weather_app/assets/130905151/99a27021-7da2-46bf-8cf0-911c55a2ed14)
+![Screenshot 2024-04-14 185957](https://github.com/anuragbhanu/Weather_app/assets/130905151/691c9eb3-1cba-414f-9463-90d4ddf009e3)
+![Screenshot 2024-04-14 190017](https://github.com/anuragbhanu/Weather_app/assets/130905151/46a5bfd7-1c81-48b7-a3a2-1ed3a9369f9e)
+![Screenshot 2024-04-14 190035](https://github.com/anuragbhanu/Weather_app/assets/130905151/dfaee226-1fe6-4d35-9a05-e281bb3b5438)
+![Screenshot 2024-04-14 190101](https://github.com/anuragbhanu/Weather_app/assets/130905151/b1520b36-467b-484a-8d6e-96b2414db200)
+![Screenshot 2024-04-14 190112](https://github.com/anuragbhanu/Weather_app/assets/130905151/29d9a180-8b21-43ae-9e15-ad9b8bc48327)
+![Screenshot 2024-04-14 190211](https://github.com/anuragbhanu/Weather_app/assets/130905151/b272b6bc-6d9c-41cf-ab8f-f28ab55603e2)
+![Screenshot 2024-04-14 190224](https://github.com/anuragbhanu/Weather_app/assets/130905151/23edefd4-182e-4021-80db-d929bad61691)
+![Screenshot 2024-04-14 190240](https://github.com/anuragbhanu/Weather_app/assets/130905151/96f2df8a-1b3f-4f49-ab4f-4a3fe57b863a)
+![Screenshot 2024-04-14 190255](https://github.com/anuragbhanu/Weather_app/assets/130905151/68b3dd19-117b-481e-9916-e9b5353d6b08)
+![Screenshot 2024-04-14 190312](https://github.com/anuragbhanu/Weather_app/assets/130905151/d2baa314-6ed9-49e0-bf33-45d42fd6b37a)
+![Screenshot 2024-04-14 190322](https://github.com/anuragbhanu/Weather_app/assets/130905151/4f735c1a-be1d-4dbf-921c-0242621bc2ce)
+![Screenshot 2024-04-14 190345](https://github.com/anuragbhanu/Weather_app/assets/130905151/2fd9b0b8-6a61-4c04-8455-e5efc330679f)
+![Screenshot 2024-04-14 190410](https://github.com/anuragbhanu/Weather_app/assets/130905151/8052f58b-fc3f-49cf-95ff-1d866ef77502)
+
